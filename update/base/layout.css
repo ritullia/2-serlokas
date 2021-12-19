@@ -1,0 +1,32 @@
+.container {
+    display: inline-block;
+    width: 100%;
+    margin: 100px calc(50% - 400px);
+}
+
+.container > .left-column {
+    display: inline-block;
+    float: left;
+}
+
+.container > .right-column {
+    display: inline-block;
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 700px;
+        margin: 100px calc(50% - 350px);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 300px;
+        margin: 100px calc(50% - 150px);
+    }
+}

@@ -1,0 +1,49 @@
+/* base */
+@import '../base/variables.css';
+@import '../base/reset.css';
+@import '../base/layout.css';
+
+/* 3rd-party*/
+
+/* components */
+@import '../components/button.css';
+
+.container {
+}
+
+.left-column {
+    display: inline-block;
+    width: 800px;
+    margin: 100px calc(50% - 400px);
+    position: relative;
+    background-color: aquamarine;
+}
+
+.right-column {
+    background-color: blue;
+}
+
+.main-title {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 80px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.text {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+.text2 {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
