@@ -1,49 +1,98 @@
-/* base */
-@import '../base/variables.css';
-@import '../base/reset.css';
-@import '../base/layout.css';
-
-/* 3rd-party*/
-
-/* components */
-@import '../components/button.css';
-
-.container {
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
 }
 
-.left-column {
+body {
+    background-color: #eaebed;
+}
+
+.container {
     display: inline-block;
     width: 800px;
-    margin: 100px calc(50% - 400px);
-    position: relative;
-    background-color: aquamarine;
+    padding: 60px 20px;
+    margin: 0 calc(50% - 400px);
+    /*background-color: yellow;*/
+}
+.left-column {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 8%;
+    display: inline-block;
+}
+
+.img {
+    width: 40%;
+    float: left;
 }
 
 .right-column {
-    background-color: blue;
+    display: inline-block;
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 10%;
+    text-align: center;
+    /*background-color: aqua;*/
 }
 
 .main-title {
     display: inline-block;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 80px;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: #696f89;
 }
 
 .text {
+    display: inline-block;
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 0;
-    font-size: 22px;
-    color: var(--secondary-color);
+    margin-bottom: 1em;
+    font-size: 24px;
+    color: #696f89;
 }
 
 .text2 {
+    display: inline-block;
     width: 100%;
-    margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
+    margin: 1.4em 0 1em;
     text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #696f89;
+}
+
+.btn:hover {
+    background-color: #545764;
+}
+
+@media (max-width: 860px) {
+    .container {
+        width: 660px;
+        margin: 0;
+        padding: 30px 10px;
+        /*background-color: antiquewhite;*/
+    }
+    .img {
+        width: 40%;
+        margin: 0 15%;
+    }
+    .text {
+        width: 70%;
+        margin: 0 15% 0;
+    }
 }
