@@ -14,27 +14,29 @@ body {
 
 .container {
     display: inline-block;
-    width: 800px;
+    width: 860px;
     padding: 60px 20px;
-    margin: 0 calc(50% - 400px);
+    margin: 0 calc(50% - 430px);
     /*background-color: yellow;*/
 }
-.left-column {
+/*.left-column {
     width: 50%;
     margin-left: 25%;
-    margin-top: 8%;
+    margin-top: 10%;
     display: inline-block;
-}
+}*/
 
 .img {
+    display: inline-block;
     width: 40%;
     float: left;
+    margin-top: 10%;
 }
 
 .right-column {
     display: inline-block;
     width: 50%;
-    margin-top: 8%;
+    margin-top: 20%;
     margin-left: 10%;
     text-align: center;
     /*background-color: aqua;*/
@@ -87,9 +89,29 @@ body {
         padding: 30px 10px;
         /*background-color: antiquewhite;*/
     }
+    .right-column {
+        margin-top: 10%;
+    }
     .img {
         width: 40%;
         margin: 0 15%;
+    }
+    .text {
+        width: 70%;
+        margin: 0 15% 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 540px;
+    }
+    .right-column {
+        margin-top: 10%;
+    }
+    .img {
+        width: 40%;
+        margin: 0 15% 0;
     }
     .text {
         width: 70%;
